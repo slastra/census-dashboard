@@ -123,7 +123,7 @@
 	<Sidebar.Inset class="border">
 		<header class="flex h-12 items-center gap-2 px-4 sm:px-8">
 			<Sidebar.Trigger />
-			<Separator orientation="vertical" class="mr-1 h-3" />
+			<Separator orientation="vertical" class="mr-1 data-[orientation=vertical]:h-4" />
 			<nav class="flex items-center gap-1.5 text-sm" aria-label="Breadcrumb">
 				<a href="/" class="text-muted-foreground transition-colors hover:text-foreground">Charts</a>
 				{#if activeChart}
