@@ -6,7 +6,8 @@
 # from the Census API and cached — so set CENSUS_DATA_API_KEY in the Coolify env.
 
 [phases.setup]
-nixPkgs = ["bun", "unzip"]
+# node is required by mapshaper (its bin uses `#!/usr/bin/env node`).
+nixPkgs = ["bun", "nodejs_20", "unzip"]
 
 [phases.install]
 cmds = ["bun install"]
