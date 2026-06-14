@@ -1,0 +1,24 @@
+# Coolify / Nixpacks build — Bun + SvelteKit (adapter-node).
+#
+# The Census geo data (Gazetteer + TIGER boundary geometry) is git-ignored, so
+# it's downloaded during the build (`unzip` is needed by the fetch scripts;
+# `mapshaper` comes from devDependencies). Statistical data is fetched at runtime
+# from the Census API and cached — so set CENSUS_DATA_API_KEY in the Coolify env.
+
+[phases.setup]
+nixPkgs = ["bun", "unzip"]
+
+[phases.install]
+cmds = ["bun install"]
+
+[phases.build]
+cmds = [
+  "bun scripts/fetch-gazetteer.ts",
+  "bun scripts/fetch-geometry.ts state",
+  "bun scripts/fetch-geometry.ts county",
+  "bun scripts/fetch-geometry.ts tract AR",
+  "bun run build"
+]
+
+[start]
+cmd = "bun ./build/index.js"
