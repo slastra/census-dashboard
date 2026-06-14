@@ -1,0 +1,280 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:is(.dark *));
+
+@custom-variant data-open {
+	&:where([data-state='open']),
+	&:where([data-open]:not([data-open='false'])) {
+		@slot;
+	}
+}
+
+@custom-variant data-closed {
+	&:where([data-state='closed']),
+	&:where([data-closed]:not([data-closed='false'])) {
+		@slot;
+	}
+}
+
+@custom-variant data-checked {
+	&:where([data-state='checked']),
+	&:where([data-checked]:not([data-checked='false'])) {
+		@slot;
+	}
+}
+
+@custom-variant data-unchecked {
+	&:where([data-state='unchecked']),
+	&:where([data-unchecked]:not([data-unchecked='false'])) {
+		@slot;
+	}
+}
+
+@custom-variant data-selected {
+	&:where([data-selected]) {
+		@slot;
+	}
+}
+
+@custom-variant data-disabled {
+	&:where([data-disabled='true']),
+	&:where([data-disabled]:not([data-disabled='false'])) {
+		@slot;
+	}
+}
+
+@custom-variant data-active {
+	&:where([data-state='active']),
+	&:where([data-active]:not([data-active='false'])) {
+		@slot;
+	}
+}
+
+@custom-variant data-horizontal {
+	&:where([data-orientation='horizontal']) {
+		@slot;
+	}
+}
+
+@custom-variant data-vertical {
+	&:where([data-orientation='vertical']) {
+		@slot;
+	}
+}
+
+@utility font-heading {
+	font-family: var(--font-heading);
+}
+
+@utility no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+/* Ros\00e9 Pine Dawn (light) */
+:root {
+	--radius: 0.625rem;
+	/* Base: #faf4ed */
+	--background: oklch(0.97 0.01 75);
+	/* Text: #575279 */
+	--foreground: oklch(0.44 0.05 295);
+	/* Surface: #fffaf3 */
+	--card: oklch(0.98 0.008 80);
+	--card-foreground: oklch(0.44 0.05 295);
+	/* Overlay: #f2e9e1 */
+	--popover: oklch(0.94 0.012 70);
+	--popover-foreground: oklch(0.44 0.05 295);
+	/* Rose: #d7827e - signature accent */
+	--primary: oklch(0.67 0.12 25);
+	/* Base for contrast */
+	--primary-foreground: oklch(0.97 0.01 75);
+	/* Overlay: #f2e9e1 */
+	--secondary: oklch(0.94 0.012 70);
+	--secondary-foreground: oklch(0.44 0.05 295);
+	--muted: oklch(0.94 0.012 70);
+	/* Muted: #9893a5 */
+	--muted-foreground: oklch(0.64 0.025 290);
+	/* Overlay */
+	--accent: oklch(0.94 0.012 70);
+	--accent-foreground: oklch(0.44 0.05 295);
+	/* Love: #b4637a */
+	--destructive: oklch(0.58 0.13 10);
+	/* Highlight Low: #f4ede8 */
+	--border: oklch(0.94 0.015 60);
+	--input: oklch(0.94 0.015 60);
+	/* Iris: #907aa9 */
+	--ring: oklch(0.58 0.08 305);
+	/* Chart colors using Ros\00e9 Pine palette */
+	--chart-1: oklch(0.67 0.12 25); /* Rose */
+	--chart-2: oklch(0.5 0.08 215); /* Pine */
+	--chart-3: oklch(0.58 0.08 305); /* Iris */
+	--chart-4: oklch(0.75 0.14 65); /* Gold */
+	--chart-5: oklch(0.64 0.07 190); /* Foam */
+	--sidebar: oklch(0.94 0.012 70);
+	--sidebar-foreground: oklch(0.44 0.05 295);
+	--sidebar-primary: oklch(0.67 0.12 25);
+	--sidebar-primary-foreground: oklch(0.97 0.01 75);
+	--sidebar-accent: oklch(0.94 0.012 70);
+	--sidebar-accent-foreground: oklch(0.44 0.05 295);
+	--sidebar-border: oklch(0.94 0.015 60);
+	--sidebar-ring: oklch(0.58 0.08 305);
+}
+
+/* Ros\00e9 Pine (dark) */
+.dark {
+	/* Base: #191724 */
+	--background: oklch(0.18 0.025 295);
+	/* Text: #e0def4 */
+	--foreground: oklch(0.9 0.02 295);
+	/* Surface: #1f1d2e */
+	--card: oklch(0.21 0.025 295);
+	--card-foreground: oklch(0.9 0.02 295);
+	/* Overlay: #26233a */
+	--popover: oklch(0.24 0.03 295);
+	--popover-foreground: oklch(0.9 0.02 295);
+	/* Rose: #ebbcba - signature accent */
+	--primary: oklch(0.82 0.07 25);
+	/* Base for contrast */
+	--primary-foreground: oklch(0.18 0.025 295);
+	/* Overlay: #26233a */
+	--secondary: oklch(0.24 0.03 295);
+	--secondary-foreground: oklch(0.9 0.02 295);
+	--muted: oklch(0.24 0.03 295);
+	/* Muted: #6e6a86 */
+	--muted-foreground: oklch(0.52 0.035 290);
+	/* Highlight Med: #403d52 */
+	--accent: oklch(0.32 0.03 290);
+	--accent-foreground: oklch(0.9 0.02 295);
+	/* Love: #eb6f92 */
+	--destructive: oklch(0.68 0.16 10);
+	/* Highlight Med (#403d52) — a solid, on-palette border so surfaces are
+	   clearly delineated (Rosé Pine uses the Highlight tones for edges). */
+	--border: oklch(0.32 0.03 290);
+	--input: oklch(0.32 0.03 290);
+	/* Iris: #c4a7e7 */
+	--ring: oklch(0.76 0.1 305);
+	/* Chart colors using Ros\00e9 Pine palette */
+	--chart-1: oklch(0.82 0.07 25); /* Rose */
+	--chart-2: oklch(0.55 0.08 215); /* Pine */
+	--chart-3: oklch(0.76 0.1 305); /* Iris */
+	--chart-4: oklch(0.84 0.12 70); /* Gold */
+	--chart-5: oklch(0.82 0.06 190); /* Foam */
+	--sidebar: oklch(0.21 0.025 295);
+	--sidebar-foreground: oklch(0.9 0.02 295);
+	--sidebar-primary: oklch(0.82 0.07 25);
+	--sidebar-primary-foreground: oklch(0.18 0.025 295);
+	--sidebar-accent: oklch(0.3 0.03 295);
+	--sidebar-accent-foreground: oklch(0.9 0.02 295);
+	/* Highlight Med so the sidebar's edges/dividers are visible in dark mode. */
+	--sidebar-border: oklch(0.32 0.03 290);
+	--sidebar-ring: oklch(0.76 0.1 305);
+}
+
+@theme inline {
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-chart-1: var(--chart-1);
+	--color-chart-2: var(--chart-2);
+	--color-chart-3: var(--chart-3);
+	--color-chart-4: var(--chart-4);
+	--color-chart-5: var(--chart-5);
+	--color-sidebar: var(--sidebar);
+	--color-sidebar-foreground: var(--sidebar-foreground);
+	--color-sidebar-primary: var(--sidebar-primary);
+	--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+	--color-sidebar-accent: var(--sidebar-accent);
+	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+	--color-sidebar-border: var(--sidebar-border);
+	--color-sidebar-ring: var(--sidebar-ring);
+
+	--font-sans: 'Source Serif 4 Variable', 'Georgia', ui-serif, serif;
+	--font-heading: 'Playfair Display Variable', 'Georgia', ui-serif, serif;
+}
+
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+}
+
+/* Page transition animations */
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes slide-from-right {
+	from {
+		transform: translateX(20px);
+	}
+}
+
+@keyframes slide-to-left {
+	to {
+		transform: translateX(-20px);
+	}
+}
+
+/* Only the main content slides/fades on navigation; the sidebar + top bar
+   (the `root` snapshot) stay put. */
+::view-transition-old(page) {
+	animation:
+		150ms ease-out both fade-out,
+		150ms ease-out both slide-to-left;
+}
+
+::view-transition-new(page) {
+	animation:
+		200ms ease-in 50ms both fade-in,
+		200ms ease-in 50ms both slide-from-right;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation: none;
+}

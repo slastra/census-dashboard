@@ -1,0 +1,13 @@
+[chart]
+title = "Median Income by Tract — Benton County, AR"
+kind = "map"
+description = "ACS 5-year median household income by census tract in Benton County."
+
+[query]
+metric = "median_household_income"
+dataset = "acs5"
+year = 2023
+
+[map]
+level = "tract"
+within = "Benton County, AR"

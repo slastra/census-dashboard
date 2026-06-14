@@ -1,0 +1,84 @@
+[chart]
+title = "Median Age Across Northwest Arkansas (2023)"
+kind = "bar"
+description = "Every NWA town ranked by median age. ACS 5-year 2023."
+
+[query]
+metric = "median_age"
+dataset = "acs5"
+years = [2023]
+
+[[series]]
+place = "Bella Vista, AR"
+
+[[series]]
+place = "Bentonville, AR"
+
+[[series]]
+place = "Rogers, AR"
+
+[[series]]
+place = "Springdale, AR"
+
+[[series]]
+place = "Fayetteville, AR"
+
+[[series]]
+place = "Siloam Springs, AR"
+
+[[series]]
+place = "Centerton, AR"
+
+[[series]]
+place = "Pea Ridge, AR"
+
+[[series]]
+place = "Lowell, AR"
+
+[[series]]
+place = "Cave Springs, AR"
+
+[[series]]
+place = "Gravette, AR"
+
+[[series]]
+place = "Gentry, AR"
+
+[[series]]
+place = "Decatur, AR"
+
+[[series]]
+place = "Highfill, AR"
+
+[[series]]
+place = "Little Flock, AR"
+
+[[series]]
+place = "Johnson, AR"
+
+[[series]]
+place = "Tontitown, AR"
+
+[[series]]
+place = "Farmington, AR"
+
+[[series]]
+place = "Prairie Grove, AR"
+
+[[series]]
+place = "Lincoln, AR"
+
+[[series]]
+place = "Elkins, AR"
+
+[[series]]
+place = "Greenland, AR"
+
+[[series]]
+place = "West Fork, AR"
+
+[[series]]
+place = "Goshen, AR"
+
+[[series]]
+place = "Elm Springs, AR"

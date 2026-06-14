@@ -1,0 +1,13 @@
+[chart]
+title = "Oldest & Youngest States"
+kind = "map"
+description = "Median age by state, ACS 5-year 2023. Maine & Florida gray; Utah stays young."
+
+[query]
+metric = "median_age"
+dataset = "acs5"
+year = 2023
+
+[map]
+level = "state"
+within = "US"

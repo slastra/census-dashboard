@@ -1,0 +1,17 @@
+[chart]
+title = "Median Household Income by County, Arkansas"
+kind = "map"
+description = "ACS 5-year median household income across Arkansas counties, 2023."
+
+[query]
+metric = "median_household_income"
+dataset = "acs5"
+year = 2023
+
+[map]
+level = "county"
+within = "AR"
+
+[options]
+y_label = "Median household income (USD)"
+show_margin_of_error = false

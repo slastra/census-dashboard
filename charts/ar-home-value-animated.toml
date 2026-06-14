@@ -1,0 +1,17 @@
+[chart]
+title = "Home Values Rising — Arkansas Counties"
+kind = "map"
+description = "Median home value by county, animated 2015 → 2023. Watch Northwest Arkansas surge."
+
+[query]
+metric = "median_home_value"
+dataset = "acs5"
+years = "2015..2023"
+
+[map]
+level = "county"
+within = "AR"
+
+[options]
+y_label = "Median home value (USD)"
+show_margin_of_error = false

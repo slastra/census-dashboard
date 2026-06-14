@@ -1,0 +1,13 @@
+[chart]
+title = "Population by State"
+kind = "map"
+description = "ACS 5-year total population across the 50 states, 2023."
+
+[query]
+metric = "population"
+dataset = "acs5"
+year = 2023
+
+[map]
+level = "state"
+within = "US"

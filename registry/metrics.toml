@@ -1,0 +1,48 @@
+# Metric registry — curated alias -> Census variable-code mappings.
+#
+# This is the system's compounding asset: an AI author never touches variable
+# codes, only the aliases below. Codes differ by dataset (and, for decennial,
+# by vintage), so each alias declares a code per dataset it supports.
+#
+# Decennial keys are kept for forward-compatibility but are NOT wired up in v1
+# (only acs5 + acs1 are fetched). The CLI `metrics` command reports support.
+
+[population]
+label = "Total Population"
+acs5 = "B01003_001E"
+acs1 = "B01003_001E"
+decennial_2020 = "P1_001N"
+decennial_2010 = "P001001"
+
+[median_household_income]
+label = "Median Household Income"
+acs5 = "B19013_001E"
+acs1 = "B19013_001E"
+# not available in decennial
+
+[median_age]
+label = "Median Age"
+acs5 = "B01002_001E"
+acs1 = "B01002_001E"
+
+[median_gross_rent]
+label = "Median Gross Rent"
+acs5 = "B25064_001E"
+acs1 = "B25064_001E"
+
+[median_home_value]
+label = "Median Home Value (owner-occupied)"
+acs5 = "B25077_001E"
+acs1 = "B25077_001E"
+
+[total_housing_units]
+label = "Total Housing Units"
+acs5 = "B25001_001E"
+acs1 = "B25001_001E"
+decennial_2020 = "H1_001N"
+decennial_2010 = "H001001"
+
+[per_capita_income]
+label = "Per Capita Income"
+acs5 = "B19301_001E"
+acs1 = "B19301_001E"

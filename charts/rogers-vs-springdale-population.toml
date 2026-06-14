@@ -1,0 +1,22 @@
+[chart]
+# id is optional; defaults to the filename slug
+id = "rogers-vs-springdale-population"
+title = "Population: Rogers vs Springdale, AR"
+kind = "line"
+description = "Historical total population, ACS 5-year estimates."
+
+[query]
+metric = "population"         # alias resolved via registry/metrics.toml
+dataset = "acs5"             # acs5 | acs1 | decennial
+years = "2010..2023"          # range "a..b" OR explicit list [2010, 2015, 2020]
+
+[[series]]
+place = "Rogers, AR"          # friendly geography string, resolved offline
+label = "Rogers"             # optional display override
+
+[[series]]
+place = "Springdale, AR"
+
+[options]                     # optional, all fields have defaults
+y_label = "Population"
+show_margin_of_error = false

@@ -1,0 +1,21 @@
+[chart]
+title = "Median Age: College Town vs Retirement Haven"
+kind = "line"
+description = "Fayetteville (U of A) stays young while Bella Vista grays. ACS 5-year."
+
+[query]
+metric = "median_age"
+dataset = "acs5"
+years = "2010..2023"
+
+[[series]]
+place = "Fayetteville, AR"
+
+[[series]]
+place = "Bella Vista, AR"
+
+[[series]]
+place = "Rogers, AR"
+
+[[series]]
+place = "Springdale, AR"

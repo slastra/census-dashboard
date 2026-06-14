@@ -1,0 +1,22 @@
+[chart]
+title = "Median Household Income: NW Arkansas"
+kind = "bar"
+description = "ACS 5-year median household income across the Northwest Arkansas metro."
+
+[query]
+metric = "median_household_income"
+dataset = "acs5"
+years = [2019, 2021, 2023]
+
+[[series]]
+place = "Fayetteville, AR"
+
+[[series]]
+place = "Bentonville, AR"
+
+[[series]]
+place = "Rogers, AR"
+
+[options]
+y_label = "Median household income (USD)"
+show_margin_of_error = false
