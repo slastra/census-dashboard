@@ -1,0 +1,16 @@
+[chart]
+title = "The Rising Cost of Rent"
+kind = "map"
+description = "Median gross rent by state, animated 2015 → 2024."
+
+[query]
+metric = "median_gross_rent"
+dataset = "acs5"
+years = "2015..2024"
+
+[map]
+level = "state"
+within = "US"
+
+[options]
+y_label = "Median gross rent (USD/mo)"

@@ -1,0 +1,30 @@
+[chart]
+title = "Per Capita Income — Northwest Arkansas"
+kind = "line"
+description = "ACS 5-year per capita income across NW Arkansas cities, 2010 → 2024."
+
+[query]
+metric = "per_capita_income"
+dataset = "acs5"
+years = "2010..2024"
+
+[[series]]
+place = "Bentonville, AR"
+
+[[series]]
+place = "Rogers, AR"
+
+[[series]]
+place = "Fayetteville, AR"
+
+[[series]]
+place = "Springdale, AR"
+
+[[series]]
+place = "Lowell, AR"
+
+[[series]]
+place = "Siloam Springs, AR"
+
+[options]
+y_label = "Per capita income (USD)"

@@ -115,6 +115,7 @@
 	--chart-3: oklch(0.58 0.08 305); /* Iris */
 	--chart-4: oklch(0.75 0.14 65); /* Gold */
 	--chart-5: oklch(0.64 0.07 190); /* Foam */
+	--chart-6: oklch(0.58 0.13 10); /* Love */
 	--sidebar: oklch(0.94 0.012 70);
 	--sidebar-foreground: oklch(0.44 0.05 295);
 	--sidebar-primary: oklch(0.67 0.12 25);
@@ -164,6 +165,7 @@
 	--chart-3: oklch(0.76 0.1 305); /* Iris */
 	--chart-4: oklch(0.84 0.12 70); /* Gold */
 	--chart-5: oklch(0.82 0.06 190); /* Foam */
+	--chart-6: oklch(0.68 0.16 10); /* Love */
 	--sidebar: oklch(0.21 0.025 295);
 	--sidebar-foreground: oklch(0.9 0.02 295);
 	--sidebar-primary: oklch(0.82 0.07 25);
@@ -203,6 +205,7 @@
 	--color-chart-3: var(--chart-3);
 	--color-chart-4: var(--chart-4);
 	--color-chart-5: var(--chart-5);
+	--color-chart-6: var(--chart-6);
 	--color-sidebar: var(--sidebar);
 	--color-sidebar-foreground: var(--sidebar-foreground);
 	--color-sidebar-primary: var(--sidebar-primary);
