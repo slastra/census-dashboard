@@ -8,7 +8,7 @@ description = "Historical total population, ACS 5-year estimates."
 [query]
 metric = "population"         # alias resolved via registry/metrics.toml
 dataset = "acs5"             # acs5 | acs1 | decennial
-years = "2010..2023"          # range "a..b" OR explicit list [2010, 2015, 2020]
+years = "2010..2024"          # range "a..b" OR explicit list [2010, 2015, 2020]
 
 [[series]]
 place = "Rogers, AR"          # friendly geography string, resolved offline

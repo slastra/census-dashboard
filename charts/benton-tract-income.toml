@@ -6,7 +6,7 @@ description = "ACS 5-year median household income by census tract in Benton Coun
 [query]
 metric = "median_household_income"
 dataset = "acs5"
-year = 2023
+year = 2024
 
 [map]
 level = "tract"

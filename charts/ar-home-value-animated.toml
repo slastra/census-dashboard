@@ -1,12 +1,12 @@
 [chart]
 title = "Home Values Rising — Arkansas Counties"
 kind = "map"
-description = "Median home value by county, animated 2015 → 2023. Watch Northwest Arkansas surge."
+description = "Median home value by county, animated 2015 → 2024. Watch Northwest Arkansas surge."
 
 [query]
 metric = "median_home_value"
 dataset = "acs5"
-years = "2015..2023"
+years = "2015..2024"
 
 [map]
 level = "county"

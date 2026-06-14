@@ -1,12 +1,12 @@
 [chart]
 title = "Median Household Income by County, Arkansas"
 kind = "map"
-description = "ACS 5-year median household income across Arkansas counties, 2023."
+description = "ACS 5-year median household income across Arkansas counties, 2024."
 
 [query]
 metric = "median_household_income"
 dataset = "acs5"
-year = 2023
+year = 2024
 
 [map]
 level = "county"

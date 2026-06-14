@@ -1,12 +1,12 @@
 [chart]
 title = "The Graying of America"
 kind = "map"
-description = "Median age by state, animated 2010 → 2023."
+description = "Median age by state, animated 2010 → 2024."
 
 [query]
 metric = "median_age"
 dataset = "acs5"
-years = "2010..2023"
+years = "2010..2024"
 
 [map]
 level = "state"

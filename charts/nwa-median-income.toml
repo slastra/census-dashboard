@@ -6,7 +6,7 @@ description = "ACS 5-year median household income across the Northwest Arkansas 
 [query]
 metric = "median_household_income"
 dataset = "acs5"
-years = [2019, 2021, 2023]
+years = [2020, 2022, 2024]
 
 [[series]]
 place = "Fayetteville, AR"

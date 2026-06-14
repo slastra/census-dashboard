@@ -1,12 +1,12 @@
 [chart]
 title = "Population by State"
 kind = "map"
-description = "ACS 5-year total population across the 50 states, 2023."
+description = "ACS 5-year total population across the 50 states, 2024."
 
 [query]
 metric = "population"
 dataset = "acs5"
-year = 2023
+year = 2024
 
 [map]
 level = "state"

@@ -1,12 +1,12 @@
 [chart]
-title = "Median Age Across Northwest Arkansas (2023)"
+title = "Median Age Across Northwest Arkansas (2024)"
 kind = "bar"
-description = "Every NWA town ranked by median age. ACS 5-year 2023."
+description = "Every NWA town ranked by median age. ACS 5-year 2024."
 
 [query]
 metric = "median_age"
 dataset = "acs5"
-years = [2023]
+years = [2024]
 
 [[series]]
 place = "Bella Vista, AR"
